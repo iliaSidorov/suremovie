@@ -1,6 +1,7 @@
 package com.ilyasidorov.suremovies.repository;
 
 import com.ilyasidorov.suremovies.model.Movie;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

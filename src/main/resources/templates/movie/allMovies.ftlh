@@ -1,8 +1,6 @@
-<#import "parts/common.ftlh" as c>
+<#import "../parts/common.ftlh" as c>
 <@c.page>
-    <br>
-    Watched: ${count + " movies"}
-    <br/><br/>
+    <a class="btn btn-outline-dark mb-4" href="/movie/add" role="button">Add movie</a>
     <table class="table table-striped table-dark">
         <thead>
         <tr>
@@ -25,4 +23,7 @@
         </#list>
         </tbody>
     </table>
+    <br>
+    Watched: ${count + " movies"}
+    <br/><br/>
 </@c.page>

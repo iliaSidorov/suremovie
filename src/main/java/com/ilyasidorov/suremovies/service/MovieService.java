@@ -9,4 +9,5 @@ public interface MovieService {
     List<Movie> findAllMoviesByDate();
     List<Movie> findAllMoviesByThisDirector(String director);
     Long countMovies();
+    void saveMovie(Movie movie);
 }

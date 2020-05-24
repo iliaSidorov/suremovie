@@ -1,4 +1,4 @@
-<#import "parts/common.ftlh" as c>
+<#import "../parts/common.ftlh" as c>
 <@c.page>
     <table class="table table-striped table-dark">
         <thead>
@@ -13,7 +13,7 @@
         <tbody>
         <#list movies as movie>
             <tr>
-                <td>${movie.title}</td>
+                <td><a href="${movie.imdb}" title="${movie.popupTitle}" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="${movie.popupDescription}">${movie.title}</a></td>
                 <td>${movie.director}</td>
                 <td>${movie.country}</td>
                 <td>${movie.year}</td>
